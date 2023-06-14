@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ramsey AI</title>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Generate your AI image</h1>
+    </header>
+    <main>
+        <form id="image-generator-form">
+            <label for="prompt">Enter a prompt:</label>
+            <input type="text" placeholder="Robot inside a cloud" id="prompt" name="prompt" required>
+            <button type="submit">Generate Image</button>
+        </form>
+        <div id="image-container"></div>
+    </main>
+
+    <!-- Pop-up modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="spinner"></div>
+            <p>Generating image...</p>
+        </div>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
